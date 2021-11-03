@@ -1,0 +1,349 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;1,300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    background-color: rgba(107, 6, 68, 0.897);
+    
+
+}
+
+header img {
+    width: 90px;
+}
+
+header #pesquisa {
+    display: flex;
+    width: 100%;
+    margin-left: 10px;
+}
+
+header #busca {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 80%;
+}
+
+header #busca input {
+    width: 70%;
+    height: 40px;
+    border-radius: 5px;
+    margin-left: 10px;
+    border: 0;
+
+    color: black;
+    font-size: 20px;
+
+    background-image: url(./imagem/lupaa.png);
+    background-repeat: no-repeat;
+    background-size: 30px;
+    background-position-x: right;
+    background-position-y: center;
+    padding-left: 20px;
+}
+
+
+
+
+header #busca p , header #filtro p{
+    border: solid 2 px black;
+    width: 20%;
+    font-size: 24px;
+    font-weight: 700;
+    color: #ffffff;
+    font-family: 'Roboto' , sans-serif;
+
+    margin: 0 10px 0 10px
+}
+
+header #filtro{
+    display: flex;
+    align-items: center;
+    margin-top: 8px;
+
+    margin-right: 30px;
+    cursor: pointer;
+    color: #ffffff;
+    border: solid 2px;
+    border-radius: 5px;
+    height: 40px;    
+
+    transition: 0.3s;
+}
+
+header #filtro img {
+    width: 30px;
+    margin: 0 10px 0 10px
+}
+
+main #banner {
+    max-width: 90%;
+    margin: auto;
+    padding: 20px 0 20px 0;
+}
+
+main #banner p{
+    font-size: 24px;
+    font-family: 'Roboto' sans-serif;
+    margin-bottom: 10px;
+    color: #323232;
+    font-weight: 700;
+   
+}
+
+main #banner img {
+    width: 100%;
+    max-height: 400px;
+}
+
+main #banner #pedido {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: -300px 60px 0 60px;
+
+    z-index: 2; 
+    margin-bottom: 200px;  
+}
+
+main #banner #pedido #promocao p {
+  color: #ffffffe3;
+  max-width: 280px;
+}
+
+main #banner #pedido  button{
+    background-color: #a00909;
+    min-height: 60px;
+    min-width: 160px;
+    border-radius: 5px;
+    border: 0;
+    color: rgba(255, 255, 255, 0.959);
+    font-weight: 700;
+    font-size: 24px;
+
+    transition: 0.3s;
+}
+
+main #banner #pedido  button:hover{
+    cursor: pointer;
+    background-color: #ee5050ef;
+}
+
+header #filtro:hover {
+    background-color: rgba(236, 116, 236, 0.678);
+}
+
+main #conteudo{
+    max-width: 90%;
+    margin: 20px auto;   
+}
+
+main #conteudo #titulo{
+  color: #323232;
+  font-size: 24px;
+  font-weight: 700;
+  padding-bottom: 10px;
+  font-family: 'Roboto', sans-serif;
+
+}
+
+main #conteudo #produto {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    
+}
+
+main #conteudo #produto .card  {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    max-width:48%;
+    height:160px;
+    border: solid 3px #323232;
+    border-radius: 10px;
+
+    margin: 5px 5px;
+}
+
+main #conteudo #produto .card .lanche {
+    width: 300px;
+    height: 100%;
+}
+
+main #conteudo #produto .card .lanche img {
+    width: 100%;
+    height: 100%;
+}
+
+main #conteudo #produto .card .item {
+    margin: 0 5px 0 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+main #conteudo #produto .card .item p{
+    font-family: 'Roboto', sans-serif;
+    color: #323232;
+    font-weight: 700;
+    font-size: 20px;
+    margin: 10px 0;
+    
+}
+
+main #conteudo #produto .card .item .descricao {
+    font-weight: 400;
+}
+
+main #conteudo #produto .card .valor-qtd{
+    margin: auto 10px;
+}
+
+main #conteudo #produto .card .valor-qtd .valor{
+    color: #c10000;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    text-align: center;
+    margin: 0 0 10px 0;
+}
+
+main #conteudo #produto .card .valor-qtd .qtd{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+main #conteudo #produto .card .valor-qtd .qtd p{
+    width: 35px;
+    height: 35px;
+    font-size: 24px;
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+    background: #c10000;
+    color: #fff;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+main #conteudo #produto .card .valor-qtd .qtd .quantia{
+    background: #c4c4c4;
+    color: #323232;
+}
+
+main #conteudo #produto .card .valor-qtd .qtd  .sub{
+    border-radius: 5px 0 0 5px;
+    cursor: pointer;
+}
+
+main #conteudo #produto .card .valor-qtd .qtd  .add{
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: rgba(122, 2, 76, 0.945);
+}
+
+footer #links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer #links img{
+    width: 40px;
+    border-radius: 5px;
+    margin: 5px 0;
+
+    cursor: pointer;
+}
+
+footer img{
+    width: 170px;
+}
+
+footer #compra{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+footer #compra img {
+    width: 50px;   
+    margin: 20px 0;
+}
+
+footer #compra #pedir, footer #compra #cadastrar {  
+    border: 0;
+    border-radius: 10px;
+    height: 60px;
+    width: 200px;
+    font-weight: 700;
+    margin: 20px 0;
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+
+    cursor: pointer; 
+
+    transition: 0.5s;
+}
+
+footer #compra #pedir {
+    background: rgb(255, 133, 229);
+}
+
+footer #compra #cadastrar {
+    background: rgba(77, 255, 116, 0.911);
+}
+
+footer #compra #pedir:hover {
+    background: rgb(182, 5, 143);
+}
+
+footer #compra #cadastrar:hover {
+    background: rgba(16, 124, 39, 0.911);
+}
+
+footer #compra input{
+    width: 100%;
+    height: 40px;
+    border: 0;
+    border-radius: 5px;
+    margin: 10px 0;
+
+     color: #000;
+     font-size: 24px;
+
+    background-image: url(./imagem/email_black_24dp.svg);
+    background-repeat: no-repeat;
+    background-size: 40px;
+    background-position-x: 97%;
+    background-position-y: center;
+
+    padding-left: 20px;
+
+}
